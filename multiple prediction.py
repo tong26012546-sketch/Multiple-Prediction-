@@ -11,8 +11,8 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 #import model
-loan_model = pickle.load(open("/loan_model.sav",'rb'))
-heart_model = pickle.load(open("/heartmodel.sav",'rb'))
+loan_model = pickle.load(open("loan_model.sav",'rb'))
+heart_model = pickle.load(open("heartmodel.sav",'rb'))
 
 with st.sidebar:
     selcted = option_menu('Loan and heart prediction',
